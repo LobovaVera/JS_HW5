@@ -16,5 +16,12 @@ const ru = [
   "суббота",
   "воскресенье",
 ];
+function getObjectOfDays(arr1, arr2) {
+  const result = {};
+  for (let i = 0; i < arr1.length; i++) {
+    result[arr2[i]] = arr1[i];
+  }
+  return result;
+}
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log(getObjectOfDays(ru, en));
