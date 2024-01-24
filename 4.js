@@ -9,7 +9,7 @@
 Если сложно работать с методами массива, то можно сделать и обычным циклом.
 */
 
-const products = [
+const products2 = [
   {
     id: 3,
     price: 127,
@@ -31,4 +31,14 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function getProductsWithPicturesArray(productsArr) {
+  const newArr = [];
+  productsArr.forEach(function (product) {
+    if (product.photos && product.photos.length > 0) {
+      newArr.push(product);
+    }
+  })
+  return newArr;
+}
+
+console.log(getProductsWithPicturesArray(products2));

@@ -23,4 +23,7 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+
+products.forEach((product) => product.price = (Math.round((product.price * 1.15) * 100)) / 100);
+
+console.log(products);

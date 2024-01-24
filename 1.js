@@ -15,11 +15,11 @@ const numbers = {
   key7: 7,
 };
 
-// for (let key in numbers) {
-//   if (numbers[key] >= 3) {
-//     console.log(numbers[key]);
-//   }
-// }
+for (let key in numbers) {
+  if (numbers[key] >= 3) {
+    console.log(numbers[key]);
+  }
+}
 
 
 
